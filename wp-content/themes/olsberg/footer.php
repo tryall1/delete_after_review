@@ -19,7 +19,6 @@
             const submenu = menuItem.querySelector('.submenu');
             const chevron = element.querySelector('.chevron');
             
-            // Закрыть все другие подменю
             const allItems = document.querySelectorAll('.menu-item');
             allItems.forEach(item => {
                 if (item !== menuItem) {
@@ -33,7 +32,6 @@
                 }
             });
             
-            // Переключить текущее подменю
             if (submenu && submenu.classList.contains('open')) {
                 element.classList.remove('active');
                 submenu.classList.remove('open');
