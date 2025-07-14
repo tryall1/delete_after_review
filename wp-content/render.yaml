@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wordpress-stack
+    env: docker
+    plan: free
+    repo: https://github.com/tryall1/delete_after_review
+    branch: main
+    rootDir: .
+    dockerComposeFile: docker-compose.yml
